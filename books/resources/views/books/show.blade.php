@@ -4,10 +4,10 @@
 <h1>{{$book->name}}</h1>
 <ul>
 
-	<li>Id: {{$farm->id}}</li>
-	<li>Title: {{$farm->title}}</li>
-	<li>Author: {{$farm->author}}</li>
-	<li>Cover URL: {{$farm->cover_url}}</li>
+	<li>Id: {{$book->id}}</li>
+	<li>Title: {{$book->title}}</li>
+	<li>Author: {{$book->author}}</li>
+	<li>Cover URL: {{$book->cover_url}}</li>
 
 </ul>
     
