@@ -27,6 +27,7 @@ class BookController extends Controller
     public function create()
     {
         //
+        return view('books.create');
     }
 
     /**
@@ -49,6 +50,7 @@ class BookController extends Controller
     public function show(Book $book)
     {
         //
+        return view('books.show',[ 'book' => $book ]);
     }
 
     /**
