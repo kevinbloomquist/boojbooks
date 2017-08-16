@@ -1,12 +1,8 @@
 <!-- initial book view for index route -->
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>BoojBooks</title>
-  </head>
-  <body>
-    <ul>
+@extends('layouts.app')
+@section('main')
+
     @foreach($books as $book)
     <li> 
       <a href = "{{route('books.show', $book)}}">
@@ -14,7 +10,5 @@
       </a>  
     </li> 
     @endforeach
-     </ul>
     
-  </body>
-</html>
+@endsection
