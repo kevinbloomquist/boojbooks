@@ -15,4 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+/*uses resource to create full route compliment for all crud routes*/
 Route::resource('books','BookController');
