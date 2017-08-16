@@ -8,6 +8,9 @@
   <h1>Create a New Book Entry</h1>
 
   <form class="card" action="{{route('books.store')}}" method = "post">
+
+  {{csrf_field()}}
+  <input type = "hidden" name = "_token" value = "DaBSErIR...WPPI">
     
     <label for="title">Title</label>
     <input type="text" name="title" placeholder="Book Title">
