@@ -7,10 +7,10 @@
 
   <h1>Create a New Book Entry</h1>
 
-  <form class="card" action="{{route('books.store')}}" method = "post">
+  <form class="card" action="{{route('books.store')}}" method= "post">
 
   {{csrf_field()}}
-  <input type = "hidden" name = "_token" value = "DaBSErIR...WPPI">
+  <input type = "hidden" name= "_token" value= "DaBSErIR...WPPI">
     
     <label for="title">Title</label>
     <input type="text" name="title" placeholder="Book Title">
@@ -20,6 +20,9 @@
 
     <label for="cover_url">Cover URL</label>
     <input type="text" name="cover_url" placeholder="Cover URL">
+
+    <label for="pub_date">Publication Date</label>
+    <input type="text" name="pub_date" placeholder="Publication Date">
 
     <button type="submit">
       Create
