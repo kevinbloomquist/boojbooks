@@ -14,8 +14,8 @@ class BookController extends Controller
      */
     public function index()
     {
-        //store all books in $books and return the index view
-        //order returned books and paginate (9 per page)
+        /*store all books in $books and return the index view. Order returned books and paginate (9 per page)*/
+
         $books = Book::orderby('title','asc') -> paginate(9);
         return view('books.index', ['books' => $books]);
     }

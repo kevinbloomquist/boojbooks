@@ -13,11 +13,14 @@ class CreateBooksTable extends Migration
      */
     public function up()
     {
+        /* Edited on 8.16.2017 commit for easier manipulation during development. Model to be expanded once full clean paths to DB are built
+        Note: id is conventionally recognized as primary key... use $primarykey in the future for something more proprietary*/
         Schema::create('books', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
             $table->string('author');
             $table->string('cover_url');
+            $table->string('pub_date');
             $table->timestamps();
         });
     }
