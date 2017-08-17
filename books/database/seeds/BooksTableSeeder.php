@@ -36,7 +36,7 @@ class BooksTableSeeder extends Seeder
             ['title' => 'Infinite Jest',
             'author' => 'David Foster Wallace',
             'cover_url' => 'https://images-na.ssl-images-amazon.com/images/I/81a3oM3EcfL.jpg',
-            'pub_date' => '1996-02-01',
+            'pub_date' => '1996-02-01'],
 
             ['title' => 'Between the World and Me',
             'author' => 'Ta-Nehisi Coates',
@@ -45,7 +45,7 @@ class BooksTableSeeder extends Seeder
 
             ['title' => 'How the Universe Got Its Spots',
             'author' => 'Janna Levin',
-            'cover_url' => '',
+            'cover_url' => 'https://images-na.ssl-images-amazon.com/images/I/51bJga4EfML._SX319_BO1,204,203,200_.jpg',
             'pub_date' => '2003-08-02'],
 
             ['title' => 'On Bullshit',

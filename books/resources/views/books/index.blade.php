@@ -3,7 +3,8 @@
 @extends('layouts.app')
 @section('main')
 
-    <ul>
+
+    <div>
       @foreach($books as $book)
         <div class = "card">
           <img src = "{{$book->cover_url}}" width = "200px" height = "300px" alt = "Sweet Book Pic Goes Here!">
@@ -13,7 +14,7 @@
           </a>  
         </div>
       @endforeach
-    </ul>
+    </div>
     {{$books->links()}}
 
 @endsection

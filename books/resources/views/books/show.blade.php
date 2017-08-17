@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('main')
 
+<div class= "card">
 <h1>{{$book->name}}</h1>
 <ul>
 	<!-- once built out change width/height to responsive values for final layout -->
@@ -12,5 +13,14 @@
 
 
 </ul>
+       <form action="{{ url('books/'.$book->id) }}" method="POST">
+            {{ csrf_field() }}
+            {{ method_field('DELETE') }}
+
+            <button type="submit" class="btn btn-danger">
+                <i class="fa fa-trash"></i> Delete
+            </button>
+        </form>
+</div>
     
 @endsection

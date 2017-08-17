@@ -14,9 +14,9 @@ class BookController extends Controller
      */
     public function index()
     {
-        /*store all books in $books and return the index view. Order returned books and paginate (9 per page)*/
+        /*store all books in $books and return the index view. Order returned books and paginate (6 per page)*/
 
-        $books = Book::orderby('title','asc') -> paginate(9);
+        $books = Book::orderby('title','asc') -> paginate(6);
         return view('books.index', ['books' => $books]);
     }
 
@@ -94,6 +94,11 @@ class BookController extends Controller
      */
     public function destroy(Book $book)
     {
-        //
+        //Delete book by id and return index view
+
+        $book->delete();
+
+        return redirect('/books');
+
     }
 }
