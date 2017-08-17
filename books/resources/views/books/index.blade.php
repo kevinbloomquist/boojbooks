@@ -5,11 +5,13 @@
 
     <ul>
       @foreach($books as $book)
-        <li> 
+        <div class = "card">
+          <img src = "{{$book->cover_url}}" width = "200px" height = "300px" alt = "Sweet Book Pic Goes Here!">
+          <br>
           <a href = "{{route('books.show', $book)}}">
-         {{$book->name}}
+         {{$book->title}}
           </a>  
-        </li> 
+        </div>
       @endforeach
     </ul>
     {{$books->links()}}
