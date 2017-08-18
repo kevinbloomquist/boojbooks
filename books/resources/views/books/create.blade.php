@@ -25,7 +25,7 @@
     <input type="text" name="pub_date" placeholder="Publication Date">
 
     <button type="submit">
-      Create
+      ADD
     </button>
   </form>
 

@@ -71,7 +71,13 @@ class BookController extends Controller
      */
     public function edit(Book $book)
     {
-        //
+        // get the book
+        $book = Book::find($book->id);
+
+        // show the edit form and pass the book
+        return view('books.edit')
+            ->with('book', $book);
+        
     }
 
     /**
