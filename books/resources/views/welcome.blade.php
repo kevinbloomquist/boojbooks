@@ -84,8 +84,9 @@
 
                 <div class="links">
                     <a href="{{ route('books.index') }}">Enter</a>
-                   <!--  <a href="{{ route('books.create') }}">Add a Book</a>
-                    <a href="https://laravel-news.com">News</a>
+                   <a href="{{ route('books.create') }}">Add a Book</a>
+
+                    <!-- <a href="https://laravel-news.com">News</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a> -->
                 </div>

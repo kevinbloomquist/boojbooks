@@ -22,7 +22,7 @@
     <input type="text" name="cover_url" placeholder="Cover URL">
 
     <label for="pub_date">Publication Date</label>
-    <input type="text" name="pub_date" placeholder="Publication Date">
+    <input type="text" name="pub_date" placeholder="YYYY-MM-DD">
 
     <button type="submit">
       ADD
