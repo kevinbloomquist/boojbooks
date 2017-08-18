@@ -95,17 +95,29 @@ class BookController extends Controller
         'author' => 'bail|required',
         'cover_url' => 'bail|required',
       ]);
-        // Find book -> look up "findorfail" method
-        // Book::find($request->id);
-        // Save input data to variable
-        // $input= $request->all();
-        // Fill in new data and save
-        // $book->fill($input)->save();
+
+        // ***************** Alt approach
+         // Find book -> look up "findorfail" method
+         // Book::find($request->id);
+         // Save input data to variable
+         // $input= $request->all();
+         // Fill in new data and save
+         // $book->fill($input)->save();
+         // End alt approach ********************
+
             $book = Book::find($book->id);
             $book->title = $request->title;
             $book->author= $request->author;
             $book->cover_url = $request->cover_url;
+            $book->pub_date = $request->pub_date;
             $book->save();
+
+            // Redirect to books. Note:Add UI success message bounce to a refreshed "show" with new info.
+            return redirect('books');
+
+
+
+
 
 
     }
