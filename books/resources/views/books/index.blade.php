@@ -11,21 +11,21 @@
 
       @foreach($books as $book)
         <div class = "card">
-          <img src = "{{$book->cover_url}}" width = "200px" height = "300px" alt = "Sweet Book Pic Goes Here!">
-          <br>
-          <a href = "{{route('books.show', $book)}}">
-         {{$book->title}}
-          </a>  
+          <img class= "card-image-top" src = "{{$book->cover_url}}" width = "200px" height = "300px" alt = "Sweet Book Pic Goes Here!">
+          <div class="card-block">
+            <a href = "{{route('books.show', $book)}}">
+              <span class ="card-title">{{$book->title}}</span>
+            </a> 
+          </div> 
         </div>
         <form action="{{ url('books/'.$book->id) }}" method="POST">
             {{ csrf_field() }}
             {{ method_field('DELETE') }}
-
-            <button type="submit" class="btn btn-danger">
-                <i class="fa fa-trash"></i> Delete
+          <div class= "card-block">
+            <button type="submit" class="btn btn-danger">Delete
             </button>
-            <a class="btn btn-small btn-info" href="{{ route('books.edit',$book) }}">Edit this book</a>
-
+            <a class="btn btn-primary" href="{{ route('books.edit',$book) }}">Edit this book</a>
+          </div>
         </form>
       @endforeach
     </div>

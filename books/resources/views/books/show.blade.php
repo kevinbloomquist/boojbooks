@@ -20,6 +20,7 @@
             <button type="submit" class="btn btn-danger">
              Delete
             </button>
+             <a class="btn btn-primary" href="{{ route('books.edit',$book) }}">Edit this book</a>
         </form>
 </div>
     
