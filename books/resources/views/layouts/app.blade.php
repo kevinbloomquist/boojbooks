@@ -23,6 +23,7 @@
   @endif
   
 <!-- Invokes viewing area for templates and views -->
+<a href="{{ route('books.create') }}">Add a Book</a>
   @yield('main')
   
 </body>

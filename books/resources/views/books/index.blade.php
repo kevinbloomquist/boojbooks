@@ -8,7 +8,7 @@
       @if (Session::has('message'))
       <div class="alert alert-info">{{ Session::get('message') }}</div>
       @endif
-      
+
       @foreach($books as $book)
         <div class = "card">
           <img src = "{{$book->cover_url}}" width = "200px" height = "300px" alt = "Sweet Book Pic Goes Here!">
@@ -24,7 +24,7 @@
             <button type="submit" class="btn btn-danger">
                 <i class="fa fa-trash"></i> Delete
             </button>
-            <a class="btn btn-small btn-info" href="{{ URL::to('books/' . $book->id . '/edit') }}">Edit this book</a>
+            <a class="btn btn-small btn-info" href="{{ route('books.edit',$book) }}">Edit this book</a>
 
         </form>
       @endforeach

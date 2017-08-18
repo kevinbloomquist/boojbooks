@@ -3,7 +3,8 @@
 
   <h1>Edit {{$book->title}}</h1>
 
-  <form action="{{route('books.edit',$book)}}" method= "PUT">
+  <form action="{{route('books.update',$book)}}" method= "POST">
+  {{ method_field('PUT') }}
 
   {{csrf_field()}}
   <input type = "hidden" name= "csrf_token" value= "DaBSErIR...WPPI">

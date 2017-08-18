@@ -77,7 +77,7 @@ class BookController extends Controller
         // show the edit form and pass the book
         return view('books.edit')
             ->with('book', $book);
-        
+
     }
 
     /**
@@ -88,8 +88,26 @@ class BookController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Book $book)
-    {
-        //
+    { echo "Update BEEF!!!"; die();
+        // validate request
+         $this->validate($request,[
+        'title' => 'bail|required',
+        'author' => 'bail|required',
+        'cover_url' => 'bail|required',
+      ]);
+        // Find book -> look up "findorfail" method
+        // Book::find($request->id);
+        // Save input data to variable
+        // $input= $request->all();
+        // Fill in new data and save
+        // $book->fill($input)->save();
+            $book = Book::find($book->id);
+            $book->title = Input::get('title');
+            $book->author= Input::get('author');
+            $book->cover_url = Input::get('cover_url');
+            $book->save();
+
+
     }
 
     /**
@@ -100,7 +118,7 @@ class BookController extends Controller
      */
     public function destroy(Book $book)
     {
-        //Delete book by id and return index view
+        // Receives $book, runs delete method, and returns index view
 
         $book->delete();
 

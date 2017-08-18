@@ -7,7 +7,7 @@
 
   <h1>Create a New Book Entry</h1>
 
-  <form action="{{route('books.store')}}" method= "post">
+  <form action="{{route('books.store')}}" method= "POST">
 
   {{csrf_field()}}
   <input type = "hidden" name= "csrf_token" value= "DaBSErIR...WPPI">
