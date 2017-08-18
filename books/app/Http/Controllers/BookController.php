@@ -88,7 +88,7 @@ class BookController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Book $book)
-    { echo "Update BEEF!!!"; die();
+    { 
         // validate request
          $this->validate($request,[
         'title' => 'bail|required',
@@ -102,9 +102,9 @@ class BookController extends Controller
         // Fill in new data and save
         // $book->fill($input)->save();
             $book = Book::find($book->id);
-            $book->title = Input::get('title');
-            $book->author= Input::get('author');
-            $book->cover_url = Input::get('cover_url');
+            $book->title = $request->title;
+            $book->author= $request->author;
+            $book->cover_url = $request->cover_url;
             $book->save();
 
 
@@ -118,7 +118,7 @@ class BookController extends Controller
      */
     public function destroy(Book $book)
     {
-        // Receives $book, runs delete method, and returns index view
+        // Receives $book, runs delete method, and returns fresh index view
 
         $book->delete();
 
