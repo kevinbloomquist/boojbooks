@@ -28,8 +28,12 @@
         </div>
       @endforeach
     </div>
+    <div class="row">
+      <div class="justify-content-center">
         <div class="pagination pagination-lg justify-content-center">
         {{$books->links()}}
         </div>
+      </div>
+    </div>
 
 @endsection

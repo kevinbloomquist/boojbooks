@@ -11,9 +11,13 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
-        <!-- Links -->
-        <link rel="stylesheet" src="../../css/app.css" type="text/css">
+        <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
+
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+        <!-- Links -->
+        <link rel="script" href="{{ mix('/js/app.js') }}">
+
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -45,9 +49,9 @@
                 <source src="../resources/assets/Dancing-Bulbs/OGV/Dancing-Bulbs.ogv" type="video/ogv">
                 <!-- End video loop -->
 
-                <div class="title text-center m-b-md">
+                <div class="title text-center">
                     <h1>BOOJ BOOKS</h1>
-                    <a href="{{ route('books.index') }}" class="link">Enter</a>
+                    <a href="{{ route('books.index') }}">Enter</a>
 
                 </div>
 
