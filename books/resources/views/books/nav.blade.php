@@ -1,10 +1,10 @@
 @section('nav')
 
-<nav class= "navbar">
+<nav class="navbar navbar-light bg-faded">
 	<span class="navbar-brand">BB</span>
-	<a href= "{{ route('books.index') }}">All Books</a>
-	<a href= "{{ route('books.create') }}">Add a book</a>
-	<a href="#">Sort ( change to drop down)</a>
+	<a class = "nav-link" href= "{{ route('books.index') }}">All Books</a>
+	<a class = "nav-link" href= "{{ route('books.create') }}">Add a book</a>
+	<a class = "nav-link" href="#">Sort ( change to drop down)</a>
 </nav>
 
 @endsection
