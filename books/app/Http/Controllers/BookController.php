@@ -16,7 +16,7 @@ class BookController extends Controller
     {
         /*store all books in $books and return the index view. Order returned books and paginate (6 per page)*/
 
-        $books = Book::orderby('title','asc') -> paginate(6);
+        $books = Book::orderby('title','asc') -> paginate(8);
         return view('books.index', ['books' => $books]);
     }
 
@@ -59,7 +59,7 @@ class BookController extends Controller
      */
     public function show(Book $book)
     {
-        //returns the show view with 
+        //returns the show view passes $book
         return view('books.show',[ 'book' => $book ]);
     }
 
@@ -114,11 +114,6 @@ class BookController extends Controller
 
             // Redirect to books. Note:Add UI success message bounce to a refreshed "show" with new info.
             return redirect('books');
-
-
-
-
-
 
     }
 

@@ -6,33 +6,34 @@
 
 
 
-    <div>
+  
     @include('books.nav')
 
       @if (Session::has('message'))
       <div class="alert alert-info">{{ Session::get('message') }}</div>
       @endif
-
+    <div class= "row">
       @foreach($books as $book)
-        <div class = "card">
-          <img class= "card-image-top" src = "{{$book->cover_url}}" width = "200px" height = "300px" alt = "Sweet Book Pic Goes Here!">
-          <div class="card-block">
+        <div class = "card col-md-3">
+          <img class= "card-image-top rounded mx-auto d-block" src = "{{$book->cover_url}}" width = "150rem" height = "200rem" alt = "Sweet Book Pic Goes Here!">
+        <div class="card-title text-center">
             <a href = "{{route('books.show', $book)}}">
               <span class ="card-title">{{$book->title}}</span>
             </a> 
-          </div> 
         </div>
         <form action="{{ url('books/'.$book->id) }}" method="POST">
             {{ csrf_field() }}
             {{ method_field('DELETE') }}
-          <div class= "card-block">
-            <button type="submit" class="btn btn-danger">Delete
+            <button type="submit" class="btn btn-block">Delete
             </button>
-            <a class="btn btn-primary" href="{{ route('books.edit',$book) }}">Edit this book</a>
-          </div>
+            <a class="btn btn-block" href="{{ route('books.edit',$book) }}">Edit this book</a>
         </form>
+        </div>
       @endforeach
-    </div>
-    {{$books->links()}}
+      </div>
+      </div>
+        <div class="pagination pagination-lg justify-content-center">
+          {{$books->links()}}
+        </div>
 
 @endsection

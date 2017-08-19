@@ -13,15 +13,13 @@
 
 
 </ul>
-       <form action="{{ url('books/'.$book->id) }}" method="POST">
-            {{ csrf_field() }}
-            {{ method_field('DELETE') }}
-
-            <button type="submit" class="btn btn-danger">
-             Delete
-            </button>
-             <a class="btn btn-primary" href="{{ route('books.edit',$book) }}">Edit this book</a>
-        </form>
+    <form action="{{ url('books/'.$book->id) }}" method="POST">
+        {{ csrf_field() }}
+        {{ method_field('DELETE') }}
+        <button type="submit" class="btn btn-block">Delete
+        </button>
+        <a class="btn btn-block" href="{{ route('books.edit',$book) }}">Edit this book</a>
+    </form>
 </div>
     
 @endsection
