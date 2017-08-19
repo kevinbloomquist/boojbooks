@@ -8,7 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
 <!-- CSS link -->
-	<link href="../../..public/css/app.css" rel="stylesheet" type="text/css">
+	<link href="../../../public/css/app.css" rel="stylesheet" type="text/css">
 	<title>Booj Books</title>
 
 </head>
@@ -23,7 +23,7 @@
   @endif
   
 <!-- Invokes viewing area for templates and views -->
-<a href="{{ route('books.create') }}">Add a Book</a>
+  @yield('nav')
   @yield('main')
   
 </body>
