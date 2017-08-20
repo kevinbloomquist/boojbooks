@@ -17,3 +17,7 @@ Route::get('/', function () {
 
 /*uses resource to create full route compliment for all crud routes*/
 Route::resource('books','BookController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
