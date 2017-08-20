@@ -31,7 +31,7 @@ https://bloomquistboojbooks.herokuapp.com/ (coming soon)
 ### Pensieve:
 * Learn vue
 * Work out JS
-*
+
 
 
 ### Punch-list:
@@ -41,7 +41,7 @@ https://bloomquistboojbooks.herokuapp.com/ (coming soon)
 * Add styling and CSS/Sass (Front end work)
 * Figure out how to work with jQuery through build paks and add animations.
 * Give nav bar some attention - details, alignment, brand.
-* Work on REMOVE problems: 
+* Work on REMOVE/CHANGE problems: 
 	- Make script links lighter/ more efficient (look in views)
 * Expand model (migrations/ seeder/ books.php/ create & edit view forms)
 	- Change pub_date data type to proper date format
