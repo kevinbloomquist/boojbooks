@@ -51,7 +51,7 @@
 
                 <div class="title text-center">
                     <h1>BOOJ BOOKS</h1>
-                    <a href="{{ route('books.index') }}">Enter</a>
+                    <a class="btn btn-lg" href="{{ route('books.index') }}">Enter</a>
 
                 </div>
 
