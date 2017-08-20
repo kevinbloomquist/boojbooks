@@ -14,3 +14,21 @@ Please use the [ORM](https://laravel.com/docs/5.2/eloquent) rather than crafting
 * Deploy it for real so we can play with it! (and then tell us about how you deployed it)
 * Handle image uploading while adding books to the list
 * Do something fancy like integrating an external API or handling user authentication
+
+### Heroku
+https://bloomquistboojbooks.herokuapp.com/ (coming soon)
+
+### To run (locally)
+
+*Fork & clone
+*Edit .env
+*CLI: 
+npm install
+php artisan db:seed
+php artisan serve
+*Go to http://localhost:8000/
+
+### Pensieve:
+
+##Punch-list:
+
