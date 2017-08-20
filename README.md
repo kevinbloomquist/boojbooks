@@ -20,15 +20,15 @@ https://bloomquistboojbooks.herokuapp.com/ (coming soon)
 
 ### To run (locally)
 
-*Fork & clone
-*Edit .env
-*CLI: 
-npm install
-php artisan db:seed
-php artisan serve
-*Go to http://localhost:8000/
+* Fork & clone
+* Edit .env
+* CLI: 
+	npm install
+	php artisan db:seed
+	php artisan serve
+* Go to http://localhost:8000/
 
 ### Pensieve:
 
-##Punch-list:
+### Punch-list:
 
