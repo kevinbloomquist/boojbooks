@@ -29,10 +29,15 @@ https://bloomquistboojbooks.herokuapp.com/ (coming soon)
 * Go to http://localhost:8000/
 
 ### Pensieve:
+* Learn vue
+* Work out JS
+*
 
 
 ### Punch-list:
 * Write sort function and enable button
+* Deploy to heroku!!!
+* Change create/edit redirect to new or updated show view and add links back to home/index
 * Add styling and CSS/Sass (Front end work)
 * Figure out how to work with jQuery through build paks and add animations.
 * Give nav bar some attention - details, alignment, brand.
@@ -43,5 +48,7 @@ https://bloomquistboojbooks.herokuapp.com/ (coming soon)
 	- Use forms to control input formats
 	- Add function to controller methods to "sterilize" data
 * Play with video loop functionality
+* Work on login/ user functionality
+
 
 

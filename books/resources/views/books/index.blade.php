@@ -13,6 +13,7 @@
 
       @foreach($books as $book)
         <div class = "card col-md-3">
+        <!-- REMOVE/ change: work on image for solid sizing and responsiveness -->
             <img class= "card-image-top rounded mx-auto d-block" src = "{{$book->cover_url}}" width = "150rem" height = "200rem" alt = "Sweet Book Pic Goes Here!">
             <div class="card-title text-center">
                 <a href = "{{route('books.show', $book)}}">

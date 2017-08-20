@@ -13,6 +13,7 @@
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
 
+            <!-- REMOVE? work out bootstrap through sass -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
         <!-- Links -->
