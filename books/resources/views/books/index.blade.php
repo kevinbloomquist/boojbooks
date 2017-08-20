@@ -27,6 +27,7 @@
             </form>
         </div>
       @endforeach
+      <button class = "btn btn-block" onclick= "#">Sort by Author</button>
     </div>
     <div class="row">
       <div class="justify-content-center">
