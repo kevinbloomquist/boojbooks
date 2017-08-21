@@ -28,10 +28,7 @@ https://bloomquistboojbooks.herokuapp.com/ (coming soon)
 	php artisan serve
 * Go to http://localhost:8000/
 
-### Pensieve:
-* Learn vue
-* Work out JS
-
+### Fishbowl
 
 
 ### Punch-list:
