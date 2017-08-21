@@ -19,7 +19,7 @@ Please use the [ORM](https://laravel.com/docs/5.2/eloquent) rather than crafting
 https://bloomquistboojbooks.herokuapp.com/ (coming soon)
 
 ### To run (locally)
-
+*!!!(need to edit procedures)!!!
 * Fork & clone
 * Edit .env
 * CLI: 
@@ -35,7 +35,8 @@ https://bloomquistboojbooks.herokuapp.com/ (coming soon)
 
 
 ### Punch-list:
-* Write sort function and enable button
+* Improve auth_sort functionality
+	-$books are alreadypresent figure out how to sort browser side using sortby() without extra route, method, and query to DB
 * Deploy to heroku!!!
 * Change create/edit redirect to new or updated show view and add links back to home/index
 * Add styling and CSS/Sass (Front end work)
