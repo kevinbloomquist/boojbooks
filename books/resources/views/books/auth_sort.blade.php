@@ -1,8 +1,6 @@
-<!-- initial book view for index route -->
+  @extends('layouts.app')
+  @section('main')
 
-@extends('layouts.app')
-@section('main')
-  
   @include('books.nav')
 
       @if (Session::has('message'))
@@ -29,7 +27,8 @@
         </div>
       @endforeach
       <!-- Sort block btn -->
-      <a class="btn btn-block btn-lg" href="{{ url('books/auth_sort')}}">Sort by Author</a>
+            <a class="btn btn-block btn-lg" href="{{ route('books.index') }}">Sort by Title</a>
+
       <!-- End Sort block btn -->
     </div>
     <div class="row">

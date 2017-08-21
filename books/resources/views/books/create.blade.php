@@ -1,6 +1,6 @@
 
 
-<!-- There may be a possible conflict here. Since no default values are specified in the model there may have to be an entry for each key->value pair? If so just flesh out the form or reduce categories in the model and run migration again I think -->
+<!-- REMOVE/change: There may be a possible conflict here. Since no default values are specified in the model there may have to be an entry for each key->value pair? If so just flesh out the form or reduce categories in the model and run migration again I think -->
 
 @extends('layouts.app')
 @section('main')
