@@ -35,8 +35,10 @@ https://bloomquistboojbooks.herokuapp.com/ (coming soon)
 
 
 ### Punch-list:
+* ~~Add Sort link and function~~
 * Improve auth_sort functionality
 	-$books are alreadypresent figure out how to sort browser side using sortby() without extra route, method, and query to DB
+* Make all books link in nav retain sort preference if changed
 * Deploy to heroku!!!
 * Change create/edit redirect to new or updated show view and add links back to home/index
 * Add styling and CSS/Sass (Front end work)
@@ -44,6 +46,7 @@ https://bloomquistboojbooks.herokuapp.com/ (coming soon)
 * Give nav bar some attention - details, alignment, brand.
 * Work on REMOVE/CHANGE problems: 
 	- Make script links lighter/ more efficient (look in views)
+	- Model and migrations (look in create_books_table)
 * Expand model (migrations/ seeder/ books.php/ create & edit view forms)
 	- Change pub_date data type to proper date format
 	- Use forms to control input formats
