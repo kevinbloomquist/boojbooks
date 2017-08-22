@@ -33,6 +33,8 @@ https://bloomquistboojbooks.herokuapp.com/ (coming soon)
 
 ### Punch-list:
 * ~~Add Sort link and function~~
+* Ask about "Change the order of the books in the list" (if hard change:build order by route with input. If soft change jquery: $(.card).draggable())
+* add <ul> and <li> tags to convert books loop to a "list" per the instuctions
 * Improve auth_sort functionality
 	- `$books` are alreadypresent figure out how to sort browser side using `sortby()` without extra route, method, and query to DB
 * Make all books link in nav retain sort preference if changed
