@@ -23,9 +23,9 @@ Please use the [ORM](https://laravel.com/docs/5.2/eloquent) rather than crafting
 * Fork & clone
 * Edit .env
 * CLI: 
-	- npm install
-	- php artisan db:seed
-	- php artisan serve
+	- `npm install`
+	- `php artisan db:seed`
+	- `php artisan serve`
 * Go to http://localhost:8000/
 
 ### Fishbowl
