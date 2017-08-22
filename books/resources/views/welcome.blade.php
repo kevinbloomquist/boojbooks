@@ -34,21 +34,7 @@
             @endif
 
             <div class="content">
-                <!-- Begin video loop -->
-                <div class="homepage-hero-module">
-                    <div class="video-container">
-                        <div class="filter"></div>
-                        <video autoplay loop class="fillWidth">
-                            <source src="../assets/Dancing-Bulbs/MP4/Dancing-Bulbs.mp4" type="video/mp4" />
-                            <source src="../assets/Dancing-Bulbs/WEBM/Dancing-Bulbs.webm" type="video/webm" />
-                        </video>
-                            <div class="poster hidden">
-                                <img src="../assets/Dancing-Bulbs/snapshots/Dancing-Bulbs.jpg" alt="">
-                            </div>
-                        </div>
-                </div>
-                <source src="../resources/assets/Dancing-Bulbs/OGV/Dancing-Bulbs.ogv" type="video/ogv">
-                <!-- End video loop -->
+           
 
                 <div class="title text-center">
                     <h1>BOOJ BOOKS</h1>
@@ -56,13 +42,12 @@
 
                 </div>
 
-                <div class="links">
-                   <!-- <a href="{{ route('books.create') }}">Add a Book</a> -->
-
-                    <!-- <a href="https://laravel-news.com">News</a>
+               <!--  <div class="links">
+                    <a href="{{ route('books.create') }}">Add a Book</a>
+                    <a href="https://laravel-news.com">News</a>
                     <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a> -->
-                </div>
+                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                </div> -->
             </div>
         </div>
     </body>

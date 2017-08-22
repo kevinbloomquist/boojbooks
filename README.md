@@ -50,6 +50,7 @@ https://bloomquistboojbooks.herokuapp.com/ (coming soon)
 	- Add function to controller methods to "sterilize" data
 * Play with video loop functionality
 * Work on login/ user functionality
+* Hit Amazon API for link info and image uniformity
 
 
 
