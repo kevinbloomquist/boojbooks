@@ -15,8 +15,8 @@ Please use the [ORM](https://laravel.com/docs/5.2/eloquent) rather than crafting
 * Handle image uploading while adding books to the list
 * Do something fancy like integrating an external API or handling user authentication
 
-### Heroku
-https://bloomquistboojbooks.herokuapp.com/ (coming soon)
+### Deployed link
+(coming soon)
 
 ### To run (locally)
 *!!!(need to edit procedures)!!!
