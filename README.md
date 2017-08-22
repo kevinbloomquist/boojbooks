@@ -38,7 +38,7 @@ Please use the [ORM](https://laravel.com/docs/5.2/eloquent) rather than crafting
 * Improve auth_sort functionality
 	- `$books` are alreadypresent figure out how to sort browser side using `sortby()` without extra route, method, and query to DB
 * Make all books link in nav retain sort preference if changed
-* Deploy to heroku!!!
+* Deploy!!!
 * Change create/edit redirect to new or updated show view and add links back to home/index
 * Add styling and CSS/Sass (Front end work)
 * Figure out how to work with jQuery through build paks and add animations.
