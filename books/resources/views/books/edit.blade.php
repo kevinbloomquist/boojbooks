@@ -8,22 +8,47 @@
 
   {{csrf_field()}}
   <input type = "hidden" name= "csrf_token" value= "DaBSErIR...WPPI">
-    
-    <label for="title">Title</label>
-    <input type="text" name="title" placeholder="{{$book->title}}">
-
-    <label for="author">Author</label>
-    <input type="text" name="author" placeholder="{{$book->author}}">
-
-    <label for="cover_url">Cover URL</label>
-    <input type="text" name="cover_url" placeholder="{{$book->cover_url}}">
-
-    <label for="pub_date">Publication Date</label>
-    <input type="text" name="pub_date" placeholder="{{$book->pub_date}}">
-
-    <button type="submit">
-      Edit
-    </button>
+  <table>
+    <tr>
+      <td style="padding:10px;">
+        <label for="title">Title</label>
+      </td>
+      <td style="padding:10px;">
+        <input type="text" name="title" placeholder="{{$book->title}}">
+      </td>
+    </tr>
+    <tr>
+      <td style="padding:10px;">
+        <label for="author">Author</label>
+      </td>
+      <td style="padding:10px;">
+        <input type="text" name="author" placeholder="{{$book->author}}">
+      </td>
+    </tr>
+    <tr>
+      <td style="padding:10px;">
+        <label for="cover_url">Cover URL</label>
+      </td>
+      <td style="padding:10px;">
+        <input type="text" name="cover_url" placeholder="{{$book->cover_url}}">
+      </td>
+    </tr>
+    <tr>
+      <td style="padding:10px;">
+        <label for="pub_date">Publication Date</label>
+      </td>
+        <td style="padding:10px;">
+      <input type="text" name="pub_date" placeholder="{{$book->pub_date}}">
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding:10px;">
+        <button type="submit">
+          Edit
+        </button>
+      </td>
+    </tr>
+  </table>
   </form>
 
 @endsection

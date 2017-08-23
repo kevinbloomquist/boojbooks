@@ -12,21 +12,47 @@
   {{csrf_field()}}
   <input type = "hidden" name= "csrf_token" value= "DaBSErIR...WPPI">
     
-    <label for="title">Title</label>
-    <input type="text" name="title" placeholder="Book Title">
-
-    <label for="author">Author</label>
-    <input type="text" name="author" placeholder="Author">
-
-    <label for="cover_url">Cover URL</label>
-    <input type="text" name="cover_url" placeholder="Cover URL">
-
-    <label for="pub_date">Publication Date</label>
-    <input type="text" name="pub_date" placeholder="YYYY-MM-DD">
-
-    <button type="submit">
-      ADD
-    </button>
+      <table>
+    <tr>
+      <td style="padding:10px;">
+        <label for="title">Title</label>
+      </td>
+      <td style="padding:10px;">
+        <input type="text" name="title" placeholder="Title">
+      </td>
+    </tr>
+    <tr>
+      <td style="padding:10px;">
+        <label for="author">Author</label>
+      </td>
+      <td style="padding:10px;">
+        <input type="text" name="author" placeholder="Author">
+      </td>
+    </tr>
+    <tr>
+      <td style="padding:10px;">
+        <label for="cover_url">Cover URL</label>
+      </td>
+      <td style="padding:10px;">
+        <input type="text" name="cover_url" placeholder="Cover URL">
+      </td>
+    </tr>
+    <tr>
+      <td style="padding:10px;">
+        <label for="pub_date">Publication Date</label>
+      </td>
+        <td style="padding:10px;">
+      <input type="text" name="pub_date" placeholder="Publication Date">
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding:10px;">
+        <button type="submit">
+          Add
+        </button>
+      </td>
+    </tr>
+  </table>
   </form>
 
 @endsection
