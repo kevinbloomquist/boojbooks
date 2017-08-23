@@ -15,21 +15,16 @@ Please use the [ORM](https://laravel.com/docs/5.2/eloquent) rather than crafting
 * Handle image uploading while adding books to the list
 * Do something fancy like integrating an external API or handling user authentication
 
+### For Tyler and Mike:
+Thanks for the opportuinity to dig in and learn Laravel. I approached this assignment (as I approach most things) as a learning experience so You might see a few choices thatwere made through this lens vs what would be appropriate for production. I've done my best to not why I've made some of these choices but please let me know if you'd like me to explain why I went a certain direction vs something that might seem more obvious.
+
+
+
+
+
+
 ### Deployed link
 (coming soon)
-
-### To run (locally)
-*!!!(need to edit procedures)!!!
-* Fork & clone
-* Edit .env
-* CLI: 
-	- `npm install`
-	- (run migrations?)
-	- `php artisan db:seed`
-	- `php artisan serve`
-* Go to http://localhost:8000/
-
-### Fishbowl
 
 
 ### Punch-list:
