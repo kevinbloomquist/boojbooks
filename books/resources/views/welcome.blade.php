@@ -33,11 +33,11 @@
                 </div>
             @endif -->
 
-            <div class="content">
+            <div class="welcome content" style="font-size:8rem; font-weight:100">
            
 
-                <div class="title text-center">
-                    <h1>BOOJ BOOKS</h1>
+                <div class="title text-center" >
+                    <p>BOOJ BOOKS</p>
                     <a class="btn btn-lg" href="{{ route('books.index') }}">Enter</a>
 
                 </div>

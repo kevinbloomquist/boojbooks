@@ -32,7 +32,7 @@
       <a class="btn btn-block btn-lg" href="{{ url('books/auth_sort')}}">Sort by Author</a>
       <!-- End Sort block btn -->
     </div>
-    <div class="row">
+    <div class="row justify-content-center">
       <div class="justify-content-center">
         <div class="pagination pagination-lg justify-content-center">
         {{$books->links()}}

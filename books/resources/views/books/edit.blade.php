@@ -1,7 +1,8 @@
 @extends('layouts.app')
 @section('main')
+@include('books.nav')
 
-  <h1>Edit {{$book->title}}</h1>
+<h1>Edit {{$book->title}}</h1>
 
 <form action="{{route('books.update',$book)}}" method= "POST">
   {{ method_field('PUT') }}

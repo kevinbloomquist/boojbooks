@@ -31,7 +31,7 @@
 
       <!-- End Sort block btn -->
     </div>
-    <div class="row">
+    <div class="row justify-content-center">
       <div class="justify-content-center">
         <div class="pagination pagination-lg justify-content-center">
         {{$books->links()}}

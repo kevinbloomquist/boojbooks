@@ -5,7 +5,7 @@
 @extends('layouts.app')
 @section('main')
   @include('books.nav')
-  <h1>Create a New Book Entry</h1>
+<h1>Create a New Book Entry</h1>
 
 <form action="{{route('books.store')}}" method= "POST">
 
