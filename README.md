@@ -37,7 +37,7 @@ Thanks for the opportuinity to dig in and learn Laravel. I approached this assig
 * Deploy!!!
 * Change create/edit redirect to new or updated show view and add links back to home/index
 * Add styling and CSS/Sass (Front end work)
-* Figure out how to work with jQuery through build paks and add animations.
+* ~Figure out how to work with jQuery through build paks and add animations.~
 * Give nav bar some attention - details, alignment, brand.
 * Work on REMOVE/CHANGE problems: 
 	- Make script links lighter/ more efficient (look in views)
