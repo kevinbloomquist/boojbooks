@@ -15,7 +15,7 @@
             <img class= "card-image-top rounded mx-auto d-block" src = "{{$book->cover_url}}" width = "150rem" height = "200rem" alt = "Sweet Book Pic Goes Here!">
             <div class="card-title text-center">
                 <a href = "{{route('books.show', $book)}}">
-                  <span class ="card-title">{{$book->title}}</span>
+                  <span class ="card-title">{{$book->author}}</span>
                 </a> 
             </div>
             <form action="{{ url('books/'.$book->id) }}" method="POST">
