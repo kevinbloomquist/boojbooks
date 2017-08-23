@@ -62,7 +62,7 @@
             }
 
             .content {
-             background-color: #fff;
+                background-color: #fff;
                 color: #636b6f;
                 font-family: 'Raleway', sans-serif;
                 font-weight: 100;
@@ -70,4 +70,8 @@
                 height: 100vh;
                 padding-top: 20%;
             }
+
+            .card:hover {
+                background-color: rgba(255, 115, 15, 0.5);
+}
 
