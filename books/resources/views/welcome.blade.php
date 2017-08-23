@@ -22,16 +22,16 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
+         <!--    @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
-                        <a class="disabled" href="{{ route('login') }}">Login</a>
-                        <a class= "disabled" href="{{ route('register') }}">Register</a>
+                        <a class="#" href="{{ route('login') }}">Login</a>
+                        <a class= "#" href="{{ route('register') }}">Register</a>
                     @endauth
                 </div>
-            @endif
+            @endif -->
 
             <div class="content">
            
