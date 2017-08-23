@@ -24,6 +24,7 @@ Please use the [ORM](https://laravel.com/docs/5.2/eloquent) rather than crafting
 * Edit .env
 * CLI: 
 	- `npm install`
+	- (run migrations?)
 	- `php artisan db:seed`
 	- `php artisan serve`
 * Go to http://localhost:8000/
