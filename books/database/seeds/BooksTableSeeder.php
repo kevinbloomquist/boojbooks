@@ -81,7 +81,11 @@ class BooksTableSeeder extends Seeder
             ['title' => 'Cosmic Realities Vanilla Tobacco Dawnings',
             'author' => 'Tristan Tzara',
             'cover_url' => 'https://images-na.ssl-images-amazon.com/images/I/318gNeoc6KL._BO1,204,203,200_.jpg',
-            'pub_date' => '1975-03-15']
+            'pub_date' => '1975-03-15'],
+            ['title' => 'Killing it at Booj',
+            'author' => 'Kevin Bloomquist',
+            'cover_url' => '',
+            'pub_date' => '2017-08-22']
          ]);
     }
 }
