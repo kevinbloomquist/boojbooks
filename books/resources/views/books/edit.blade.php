@@ -3,7 +3,7 @@
 
   <h1>Edit {{$book->title}}</h1>
 
-  <form action="{{route('books.update',$book)}}" method= "POST">
+<form action="{{route('books.update',$book)}}" method= "POST">
   {{ method_field('PUT') }}
 
   {{csrf_field()}}
@@ -37,8 +37,8 @@
       <td style="padding:10px;">
         <label for="pub_date">Publication Date</label>
       </td>
-        <td style="padding:10px;">
-      <input type="text" name="pub_date" placeholder="{{$book->pub_date}}">
+      <td style="padding:10px;">
+        <input type="text" name="pub_date" placeholder="{{$book->pub_date}}">
       </td>
     </tr>
     <tr>
@@ -49,6 +49,6 @@
       </td>
     </tr>
   </table>
-  </form>
+</form>
 
 @endsection
