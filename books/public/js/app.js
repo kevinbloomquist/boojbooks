@@ -800,10 +800,15 @@ window.Vue = __webpack_require__(35);
 Vue.component('example', __webpack_require__(36));
 
 var app = new Vue({
-  el: '#app'
+    el: '#app'
 });
 
-$(document).ready(function () {});
+$(document).ready(function () {
+
+    $(".card").hover(function () {
+        $(this).ToggleClass(".highlight");
+    });
+});
 
 /***/ }),
 /* 10 */
